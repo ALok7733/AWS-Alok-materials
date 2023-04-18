@@ -1,0 +1,256 @@
+Tips 
+• Sell Azure & SRE first - look at the blurb under FNF script page
+
+• Focus on asking questions that don’t show our knowledge but enable the candidate to show their knowledge. So try to avoid questions that have like an secret magic logic such as xor of bits.  
+	• So if you ask coding question say isPrime or Binary tree traversal, for most part briefly share the logic and context that enables candidate to do problem solving. Then see how the candidate codes with that logic as modular, clean, optimized, scalable, edge case, exception handling, logging, unit test cases and so on 
+ 
+• Start with what the candidate has done from his/her resume - the recent project they are working on or project they are most proud of.  
+	• Ask them to describe the goals of the project (customer focus), then architecture, then their specific role, the specific code they contributed, (peeling the onion strategy where progressively we focus on their role, contribution, you vs team, decisions, how you did it. Results - how did you measure success, why those measures, lessons learned, how would you do it differently. If candidate says they used a hash function, ask which hash function why that hash function (shows depth, hands-on, indicates if they really did that work) 
+ 
+• Have a variety of question bank to adapt to candidates strengths 
+	• So if a candidate is expert in UX then focus on UX questions such as percentage pixel, internationalization, accessibility 
+ 
+• Pick questions that represent the problems we are working on in our team 
+	• So we pick question on how would one go about creating an incident response assistant – various components and so on 
+	• How would you create an experience to enable users to find the right engineering team to contact for an issue 
+	
+• SREs are distinguished from other SWEs being expert in 'production related technologies'
+	• In all interviews we keep this in focus to understand candidates skills and passion for production & reliability
+	• Ask candidates question related to how they managed and operated services they build
+	• During coding questions push on how the solution will scale say for 1000 tps or large amount of data or to reduce latency
+	• Ask product related questions such as what monitoring, alert did you set or what monitoring or alert will you set say on a website or on Azure or Twitter
+	• See in below for more questions
+ 
+First round 
+ 
+Competency to assess - 4+ years of professional software engineering experience for SDE II 
+Example questions 
+• Explain the recent project or project you most proud of - Ask them to describe the goals of the project (customer focus), then architecture, then their specific role, the specific code they contributed, (peeling the onion strategy where progressively we focus on their action - role, contribution, you vs team, decisions, how you did it. Results - measure success, results, why this measure, lessons learned, how would u do it differently). If candidate says they used a hash function, ask which hash function why that hash function (shows depth, hands-on, indicates if they really did that work) 
+ 
+Competency to assess - Solid coding skills in C/C++ or C#/Java 
+Example questions as below focus on data structures, code modularity, completeness, exception handling, overflow underflow, edge case, reuse, unit test cases, logging, monitoring, speed of thinking/coding, quality code that takes performance, maintainability into consideration, scale, reliability, durablity. Test coverage. Identify & prevent bugs. What monitoring, alert, security aspects  
+• Find Kth smallest or largest element in an array 
+• Print tree in level order traversal 
+• Reverse string , then may be reverse words in a sentence 
+• Given two sorted linked lists, write code to merge them 
+• Search an element in sorted and rotated array 
+• Find repeat values in an array 
+	• Write unit test cases, exception handling, edge cases, modularity / reuse of parts 
+• Reverse a string 
+• Find if string is palindrome 
+• Sort an array according to absolute difference with given value. 
+• Given a linked list and two integers M and N. Traverse the linked list such that you retain M nodes then delete next N nodes, continue the same till end of the linked list. 
+• Given a string s we need to tell minimum characters to be appended (insertion at end) to make a string palindrome. 
+• WAP Check if the given tree is Binary search tree 
+• WAP to find out least element in sorted rotated array . 
+• Check if any anagram of a string is palindrome or not? 
+• Find the source of Itinerary from a given list of tickets 
+• Print binary tree in a zig-zag fashion like the first level from left to right, second from right to left and so on.  
+• Given a list of numbers just reverse the odd numbers. 
+• Given a sorted array A[] and a number x, check for a pair in A[] with the sum as x. 
+ 
+Second round 
+ 
+Competency to assess -  Excellent technical design and Distributed systems (OO, caching, sharding, microservices, multi-region - reuse (modularization), design that solves for customer / business / operational needs, integration, reliability (Scale, perf), design patterns (message driven, REST)), Security, Monitoring, Alerting, TSG 
+ 
+	• Design a multiplayer game like snakes and ladders 
+		○ First come up with objects 
+		○ Then comeup with algorithm 
+		○ How to support different devices 
+		○ How to support it offline 
+	• Design a file sharing platform like dropbox 
+	• Design a system like bookmyshow for booking movie tickets 
+	• Design a system like irctc for booking railway tickets 
+	• Design a system for scheduling meetings 
+	• Design a system to manage elevators – start with OO and then progress to outline logic for the controller and then progress to write pseudo/working code for the controller algorithm 
+		○ High order thinking – how can it be extended to manage elevators across multiple buildings? How can it optimized to reduce wait time or consume less energy? 
+	• Design a restaurant scheduling system – start with OO and then progress to outline logic for the core scheduler and then progress to write pseudo/working code for the scheduler algorithm 
+		○ High order thinking – how can it be extended to manage across restaurants? Enable special selections such as an event, birthday, window facing, booth? 
+	• Architecture of a basic web application that is used to manage employee data in a company 
+		○ High order thinking – spans across companies, across  regions, employee movement across regions, read latency vs write latency, replication, monitoring, reliability 
+	• Design a TSG automation system 
+	• How would you implement a spell corrector? example: Minimum => Minimum  Hint: Breath-first search 
+	• How would you calculate any mathematical expression? example => 5+8*3 = 29 Hint: Infix to postfix 
+	• How would you implement auto-complete feature? Hint: Trie 
+	• There is a website with many users. A user is said to be online if he clicks a button on the website. Suggest me a good algorithm for the function to find the recent ten online user list. Hint: LRU cache 
+	• Design something similar to Quora (social Network+ message broad service) 
+	• Design Dropbox or google drive (global file storage and sharing service) 
+	• Design Facebook messenger  
+	• Design Whats app feature that tells if the message is received/read/unread by recipient 
+ 
+Third round 
+ 
+Competency to assess - Team and Microsoft culture fit (customer focused, growth mindset, team player or collaborator, data focus, Livesite bent) 
+• Tell me example when u used customer feedback to drive improvement or example when you delighted or wowed the customer 
+• Tell me about an error in judgment or design/code or your biggest failure 
+• Tell me example when you ran into significant obstacles to achieve a goal 
+• Give an example you worked with someone who wasn’t cooperative as you needed and what you did 
+ 
+Competency to assess - Passion for software reliability and operability 
+     Example questions 
+• What kind of monitoring and alerting will you setup on webapp or have setup on a project that you worked? 
+• What were some common causes of failures in the system you built & maintained? 
+• Tell me about an oncall experience where you had to troubleshoot & mitigate a production issue? 
+• How would you make it easier to do? 
+• Customers are complaining that your website is slow. How will you troubleshoot? 
+• Are you OK with 30% time being oncall? [ideal response is that candidate is curious on what kind of production issues, the process & training for oncall. If response is need to check with my family then probably not right fit]
+• How would you respond as a call leader on an issue of say your website is down or Twitter is down or users complaining Azure VMs not starting up?            
+ 
+ 
+Preferred qualifications 
+- Expertise in debugging and remediating issues in large-scale distributed systems 
+- Experience as a crisis manager leading response to service outages 
+- Knowledge of Microsoft Azure, AWS or similar cloud computing platforms 
+- Leadership skills and experience. 
+
+
+--------------------------------------Adding More---------------------------------
+
+1. What is faster to access  CPU registers or memory?
+Multiple choice CPU register or Memory
+ 
+2. Is int (integer data type) in C language 16 bit or 32 bit or 64 bit?
+Options 16 bit or 32 bit or 64 bit or Depends on complier
+ 
+3. What is max value as 2 raise to the power of for a signed integer data type in C Language on a 32bit compiler? Specify the power of 2 value for it?
+Options 16 or 15 or 31 or 32 
+ 
+4. Big O Notation 
+ 
+Coding questions
+ 
+5. Delete Nodes Greater than X 
+ 
+6. IsPrime – details as below
+ 
+	  Write a function to determine if input is prime or not. A prime number is greater than 1 and that is divisible only by itself and 1 (e.g. 2, 3, 5, 7, 11).
+	  
+	 
+	  /*
+	   * Complete the function below.
+	   */
+	boolean isPrime ( int n ) {
+	 
+	}
+ 
+7. Unique Sums question 
+ 
+
+-------------------------------------------------Adding More -------------------
+
+
+This question can be used with a wide range of candidate levels (IMO 59-65), to assess proficiency in object oriented design (and coding). 
+ 
+The Singleton Design Pattern 
+Please spend no more than 20 minutes on this exercise, advancing as far as the candidate can confidently go. 
+Note: This guide expects the simplest answer for any given question, and then progressively adds complexity. If the candidate provides more complete answers, you should skip asking questions already answered but still go through the ‘discussion’ part to be convinced the candidate understands the issues and their respective solutions.  
+ 
+Important: Steer clear from language specific syntax, techniques (or tricks) - the purpose of this question is to dive deep into Computer Science Fundamentals (such as memory usage and optimizations, performance and efficiency considerations, and multi-threaded programming). If the candidate uses language-specific specially designed constructs (it's great that they know about it, but) ask them to explain how is the construct implemented, and if needed ask them to implement their solution without it. 
+ 
+1. Are you familiar with the Singleton Design Pattern? 
+If the candidate answers ‘no’, read aloud answer to (2) and continue to (3). If the candidate answers ‘yes’ follow-up with (2) 
+2. What is the pattern’s intent? Could you give a real-world example that captures the motivation for implementing the pattern?  
+From the GoF: “Intent: Ensure a class only has one instance, and provide a global point of access to it. Motivation: Although there can be many printers in a system, there should be only one printer spooler.” 
+3. Please implement the pattern (using Java, C#, or C++) 
+Minimal expected code (questions below should be skipped if the candidate provides a more complete implementation: 
+public class Singleton { 
+private static Singleton instance = null; 
+  
+protected Singleton() { 
+// Exists only to defeat instantiation 
+} 
+  
+public static Singleton getInstance() { 
+if (instance == null) { 
+instance = new Singleton(); 
+} 
+return instance; 
+} 
+} 
+Discussion:  
+· The private member of the class instance is declared as ‘static’ – what is the ‘static’ keyword used for? as ‘static’ is used for memory management, discuss the differences between the heap and stack sections of the memory. 
+· The sample code employs a technique known as ‘lazy instantiation’ to create the singleton; as a result, the singleton instance is not created until thegetInstance()method is called for the first time. This technique ensures that singleton instances are created only when needed. Compare this technique with early loading – pros and cons. 
+· The constructor is declared ‘protected’ – what is the ‘protected’ keyword used for? discuss the differences between ‘private’, ‘protected’, and ‘public’ methods and constructor specifically. Can this class still be instantiated more than once? YES! How? A subclass has access to the constructor, and also a class declared in the same package; different classloaders will have their own instance; and finally the class can be serialized and deserialized multiple times. Discuss approaches to avoid these issues (e.g. to avoid the class being instantiated by subclasses and same-package class, declare the constructor as ‘private’ and the class as ‘final’ or move the class to a separate explicit package). 
+4. Will this implementation of a Singleton still perform as expected in a multi-threaded process? If needed, “run” multiple threads through the code and show how multiple threads can enter the getInstance() method, perform the condition instruction (instance will be null) before yielding to another thread. 
+5. Please implement an MT-safe version of the Singleton pattern 
+Note: code in red was added to address the issue. 
+public class Singleton { 
+private volatile Singleton instance = null; 
+  
+protected Singleton() { 
+// Exists only to defeat instantiation 
+} 
+  
+public static Singleton getInstance() { 
+if (instance == null) { 
+synchronized(this) { 
+if (instance == null) { 
+instance = new Singleton(); 
+} 
+} 
+} 
+return instance; 
+} 
+} 
+Discussion: this added code is a software idiom called Double-Checked Locking (DCL) – if the candidate arrived at this solution independently, explore their understanding of the idiom; cover both the merits of minimal locking (in case candidates synchronize the entire method, or anything more than only the instantiation instruction) and the benefits of the idiom (performance). 
+6. Assuming you cannot rely on the construction of objects to be serialized and thread safe, will DCL still work? 
+Discussion:  
+· DCL will not work reliably in a platform independent way when implemented in Java, and it would only work when implemented in C++ when explicit memory barriers are used (note that it works well in .net). There are multiple reasons why it’s broken the primary being the ordering of the creation of the class (making the condition in our code fail as the instance will no longer be null) and the initialization of the instance’s fields – a thread accessing our Singleton may access uninitialized objects. Here’s the fix: 
+public class Singleton { 
+protected Singleton() { 
+// Exists only to defeat instantiation 
+} 
+ 
+private static class SingletonHolder { 
+private static final Singleton instance = new Singleton(); 
+} 
+ 
+public static Singleton getInstance() { 
+return SingletonHolder.instance; 
+} 
+} 
+This is ensured to work based on the Java Language Specifications, as the SingletonHolder internal class is not initialized until the JVM determines that the class must be executed, that only happens during run-time when the static getInstance() method is invoked for the first time. 
+· Further explore constructor mechanics (allocating memory, initializing fields). 
+ 
+See informative discussion here. 
+
+From <https://ppc-onenote.officeapps.live.com/o/onenoteframe.aspx?ui=en%2DUS&rs=en%2DUS&WOPISrc=https%3A%2F%2Fmicrosoft%2Esharepoint%2Ecom%2Fteams%2FSREandLiveSite%2FSRE%2520%2526%2520LiveSiteexternal%2FSRELiveSite%2F%5Fvti%5Fbin%2Fwopi%2Eashx%2Ffiles%2F30d5f2d4ceb545ec9b576ff6b10b7e6d&wdEnableRoaming=1&wdFR=1&mscc=1&hid=ca227e9e-301e-0000-9b61-f065546fe745> 
+
+Implement Find Odd 
+Scoping 
+Appropriate SDE to Principal. At higher levels the base question may seem trivial, but moving quickly to deeper challenges can make it worthwhile. 
+Introduction 
+“We have an array of integers. The integers occur an even number of times. One integer occurs an odd number of times. Find the integer that occurs an odd number of times.” These sentences are hard to say clearly. There is generally some confusion about odd and even numbers versus occurrences. Generally, candidates will clarify, but make sure that the candidate understands what you are asking. 
+Clarification 
+The candidates might ask any of the following questions: 
+7. How large is the array? Short answer: “Arbitrarily large.” Some candidates will try to assume a small size or negotiate for a manageable size. Some candidates will miss this concern entirely.  
+8. Is the array sorted? Short answer: “You don’t know.” This clarification is not required to answer the question, but shows the candidate is mentally exploring options. 
+9. What is the range of integers that occur? Short answer: “0 to maxlong” (or similar for whatever language they are working in.) This clarification is not required to answer the question, but shows the candidate is mentally exploring options. 
+10. What about input validation? What if the array doesn’t meet the conditions described? Short answer: “Good question. We should probably consider that we could receive an array that doesn’t meet our conditions. No odd occurrences or more than one.” Candidates rarely ask this up front, but many candidates design a solution that handles this problem. 
+Some candidates will jump in and find some of these issues quickly once they get started. Most good candidates will ask at least a few clarifying questions. In some cases, good candidates will just assume most of these answers without asking. Ideally the candidate will state at least some of these assumptions explicitly. 
+Initial Solutions 
+There are a few acceptable and many not good solutions to this problem. Most candidates who don’t quickly see a good solution may have trouble getting to any working solution. 
+Standard Solutions: 
+11. Linear traversal to construct a map of the integers and occurrences. The candidate makes a single pass through the array and builds a map. The candidate traverses the map elements to find the odd element. N == number of elements in the array. M == the domain of integers in the array. The complexity of this solution is O(N+M). The memory complexity is O(M).  
+12. Linear traversal to construct a set. The candidate makes a single pass through the array and builds a set. In this solution, instead of storing a sum of occurrences, the candidate adds an element to the set if not present and removes if not present. After the linear pass through the array, the map will only contain one element. Time complexity is O(N). Memory complexity is technically O(M), but is Q(M/2) and in the case of sorted data is W(1). 
+13. XOR. There is a bit of silly trick to answer this question. Passing through the array linearly will yield a single value. If the input data is valid, the number at the end will be the correct answer. The time complexity of this solution is O(N) and requires almost no additional memory, but there is no way to detect whether the input array is valid. If the input array is invalid, the solution will produce some other mostly unrelated number. If the input array contains no odd occurring numbers the result is 0, but is indistinguishable from 0 occurring an odd number of times.  
+Other Solutions: 
+• Map building as above but using an array as a map. It is possible to use an array as a map because the keys are integers. While this is fine for a small range of number, but increases both time and memory complexity to O(maxlong). 
+• Sorting. Sorting is an expensive way to solve this problem, but a cleanly implemented solution on top of sorting may be acceptable. If the candidate writes a clean linear pass after the sort  the candidate can show her ability to write clean code and it is possible to have a good discussion about big O and other challenges related to input validation. 
+Challenges 
+Input Validation 
+There are ways that the candidate may rely on the frame of the question to avoid good software practice. The candidate’s solution might not work at all if the input is invalid. Depending on time, an interviewer may consider exploring an entirely new solution with the candidate. If there is not time, talking through alternatives may work. If the candidate’s solution is only missing validation, a good approach is to present her the challenge that the input data could be wrong and ask her to adapt her code to deal with invalid inputs. If the candidate used solution 1 or 2 above, the candidate might have assumed that there would only be one odd occurrence and not checked for 0 or 2 or more occurrences. 
+Generalization 
+If the candidate did well, the interviewer can consider generalization of the function. To start, ask the candidate to answer Find Even. After this change, ask the candidate to consider how to create a library for similar operations: max, min, average, percentile. Coding these diverse function is likely not practical in a small amount of time, but we would like to see a candidate make some attempt to break down the problem and talk about what is common. Some constructive activities the candidate could engage in are: 
+• Listing the set of APIs we are considering. 
+• Considering the needs of the user of the library. 
+• Breaking out parts of her existing code into functions to identify reuse. 
+• Considering what kinds of data structures and algorithms are suitable for answering the different operations to identify the most general solution. 
+• Considering the use case where a user runs multiple of the operations on the same input data. 
+ 
+From <https://microsoft-my.sharepoint.com/personal/matthba_microsoft_com/Documents/Interview%20Question%20Find%20Odd.docx>  
+
+From <https://ppc-onenote.officeapps.live.com/o/onenoteframe.aspx?ui=en%2DUS&rs=en%2DUS&WOPISrc=https%3A%2F%2Fmicrosoft%2Esharepoint%2Ecom%2Fteams%2FSREandLiveSite%2FSRE%2520%2526%2520LiveSiteexternal%2FSRELiveSite%2F%5Fvti%5Fbin%2Fwopi%2Eashx%2Ffiles%2F30d5f2d4ceb545ec9b576ff6b10b7e6d&wdEnableRoaming=1&wdFR=1&mscc=1&hid=ca227e9e-301e-0000-9b61-f065546fe745> 
+
+
+
