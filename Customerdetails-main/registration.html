@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https:/use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="registrationstyle.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs">
+        <ul>
+          <li class="active">
+            <span class="text">Customer Details</span>
+          </li>
+          <li>
+            <span class="text">Add Customers</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="tab_wrap" style="display: block;">
+          <div class="tab_content">
+            <form action="#">
+              <div class="buttonIn">
+                <input type="text" id="searchtext">
+                <button type="button" class="btn btn-primary" id="search" onClick="myFunction()">Search</button>
+                <input class="btn btn-primary" type="reset" value="Reset">
+              </div>
+              <div class="user-details">
+                <div class="input-box1">
+                  <img src="images/imageicon.jpg">
+                </div>
+                <div class="input-box">
+                  <span class="details">Customer name</span>
+                  <input type="text" placeholder="Name">
+                </div>
+                <div class="input-box">
+                  <span class="details">Company</span>
+                  <input type="text" placeholder="Company name">
+                </div>
+                <div class="input-box">
+                  <span class="details">Phone Number</span>
+                  <input type="text" placeholder="Mobile Number">
+                </div>
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" placeholder="Email">
+                </div>
+                <div class="input-box">
+                  <span class="details">Customer Address</span>
+                  <input type="text" placeholder="Address">
+                </div>
+                <div class="input-box">
+                  <span class="details">Comments</span>
+                  <input type="text" placeholder="Comments">
+                </div>
+                <div class="input-box">
+                  <span class="details">Country</span>
+                  <input type="text" placeholder="Country">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="tab_wrap" style="display: none;">
+          <div class="tab_content">
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box1">
+                  <label for="imageupload">Upload Profile image</label>
+                  <input type="file" id="imageupload" name="img" accept="image/*">
+                </div>
+                <div class="input-box">
+                  <span class="details">Customer name</span>
+                  <input type="text" placeholder="Name">
+                </div>
+                <div class="input-box">
+                  <span class="details">Company</span>
+                  <input type="text" placeholder="Company name">
+                </div>
+                <div class="input-box">
+                  <span class="details">Phone Number</span>
+                  <input type="text" placeholder="Mobile number">
+                </div>
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" placeholder="email address">
+                </div>
+                <div class="input-box">
+                  <span class="details">Customer Address</span>
+                  <input type="text" placeholder="Address">
+                </div>
+                <div class="input-box">
+                  <span class="details">Comments</span>
+                  <input type="text" placeholder="Comments">
+                </div>
+                <div class="input-box">
+                  <span class="details">Country</span>
+                  <input type="text" placeholder="Country">
+                </div>
+                <div>
+                  <button type="button" class="btn btn-primary" id="search" onClick="myFunction()">Save Details</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
